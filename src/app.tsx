@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import app from './add.module';
-import muliply from './muliply.module';
+
+import './test.css';
 
 const App : React.FC = () => {
   return (
@@ -10,9 +10,8 @@ const App : React.FC = () => {
     </div>
   )
 }
-
-const c = app(2,3);
-const d = muliply(4,5);
-const e = c + d;
-
-console.log(e);
+// const root = ReactDOM.createRoot(document.getElementById('root')!);
+// root.render(<App />);
+ReactDOM.render(<App />,
+  document.getElementById('root')
+  );
